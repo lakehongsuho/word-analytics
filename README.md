@@ -1,4 +1,5 @@
 # word-analytics
+![image](https://github.com/user-attachments/assets/ad036fec-2bd8-4b4d-bdcc-2b159a0deda3)
 
 > word-analytics는 텍스트 분석 웹사이트입니다. 글자 수와 단어 수를 분석하고, 소셜 미디어 플랫폼에 맞는 글자 제한을 보여주는 기능을 제공합니다.
 
