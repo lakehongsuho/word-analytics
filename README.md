@@ -103,7 +103,9 @@ D:\DEV\NEXTJS\BYTEGRAD\WORD-ANALYTICS\SRC
 42
 
 - **Derived State**
+
   - 글자수를 계산하는 스테이트를 useState로 따로 만들지 않는다. 이미 스테이트로 존재하는 text에서 크기만 계산하는 스테이를 만들면 된다. 글자 수는 변경될 때마다 리렌더링이 필요하지 않은 스테이트다. 기존의 스테이트에서 파생시켜 사용하면 자원적 측면에서 좋은 방식이다.
+
     ```jsx
     export default function TextArea() {
       const [text, setText] = useState("");
@@ -115,9 +117,11 @@ D:\DEV\NEXTJS\BYTEGRAD\WORD-ANALYTICS\SRC
 44
 
 - **어레이에 필터 적용하기**
+
   - text를 스페이스바 기준으로 나누고 배열을 만드는데, 그 배열의 요소는 “” 공백이 없어야 하고, 완성된 배열의 크기를 리턴한다.
   - “Hello World” → [”Hello”, “”, “World”] → [”Hello”, “World”]
   - filter()는 조건에 따라 true 아니면 false를 리턴한다. “Hello”와 “World”에 대해서 true를 리턴하고, “”은 false를 리턴한다.
+
     ```jsx
     const numberOfWords = text.split(/\s/).filter((word) => word !== "").length;
     ```
